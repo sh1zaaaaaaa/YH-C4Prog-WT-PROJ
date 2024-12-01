@@ -2,9 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
 </head>
-<body>
+<body class="font-sans m-0 p-0 w-full">
 
+<header class="flex flex-row justify-between items-center sticky top-0 left-0 bg-[#979797] text-white p-[10px] z-10">
+    <h1 class="text-3xl font-bold">My Portfolio</h1>
+
+    <nav class="relative">
+        <input type="checkbox" id="nav-check" class="peer hidden">
+        <label for="nav-check" class="flex flex-col justify-around w-8 h-8 cursor-pointer md:hidden">
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+        </label>
+        <ul class="hidden absolute top-[60px] w-[91px] md:w-auto right-[3px] bg-[#979797] peer-checked:flex flex-col gap-4 p-4 md:relative md:flex md:flex-row md:gap-4 md:p-0 md:top-0">
+            <li><a href="contact.html" class="block text-white hover:font-bold">Contact</a></li>
+            <li><a href="about.html" class="block text-white hover:font-bold">About</a></li>
+            <li><a href="resume.html" class="block text-white hover:font-bold">Resume</a></li>
+            <li><a href="projects.html" class="block text-white hover:font-bold">Projects</a></li>
+            <li><a href="mywork.html" class="block text-white hover:font-bold">Sample Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="flex-grow bg-[#e0e0e0] p-4 md:h-full md:grid md:grid-cols-2 md:p-8 md:mx-[15%] md:my-[0.1%] gap-5">
+    <section class="md:col-span-2 border border-[#D3D3D3] rounded-lg p-4 mb-4 bg-[#D3D3D3] space-y-4 shadow-lg">
+        <h1 class="text-3xl font-bold text-[#393636] text-center">Welcome to My Portfolio!</h1>
+        <p class="mt-4 text-lg leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Hi! My name is Iegor, and I'm a passionate junior-developer with keen interest to all IT related staff.
+            I really appreciate that You decided to take a look on my portfolio. Feel free to check my recent works and
+            contact me if You will have questions.
+        </p>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 mb-4 bg-[#D3D3D3] shadow-lg flex flex-col justify-between">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Contact Details</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            You can find here my contacts. LinkedIn, GitHub, e-mail, etc. Feel free to contact me if you are interested
+            in my portfolio.
+        </p>
+        <a href="contact.html" class="self-end">
+            <button class="bg-[#979797] text-white py-2 px-4 rounded hover:bg-[#393636] shadow-md mt-4">
+                Contact Me
+            </button>
+        </a>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 mb-4 bg-[#D3D3D3] shadow-lg flex flex-col justify-between">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">About Me</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Here You can find brief information about me. Who I am and what I am doing.
+        </p>
+        <a href="about.html" class="self-end">
+            <button class="bg-[#979797] text-white py-2 px-4 rounded hover:bg-[#393636] shadow-md mt-4">
+                About Me
+            </button>
+        </a>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 mb-4 bg-[#D3D3D3] shadow-lg flex flex-col justify-between">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Resume</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            You can review my resume here. Resume contains brief information about me like my education degrees, my skills,
+            done projects and work experience.
+        </p>
+        <a href="resume.html" class="self-end">
+            <button class="bg-[#979797] text-white py-2 px-4 rounded hover:bg-[#393636] shadow-md mt-4">
+                View Resume
+            </button>
+        </a>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 mb-4 bg-[#D3D3D3] shadow-lg flex flex-col justify-between">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Projects</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            You can take a deeper look in my projects on my GitHub page.
+        </p>
+        <a href="projects.html" class="self-end">
+            <button class="bg-[#979797] text-white py-2 px-4 rounded hover:bg-[#393636] shadow-md mt-4">
+                View Projects
+            </button>
+        </a>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 mb-4 bg-[#D3D3D3] shadow-lg flex flex-col justify-between">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Sample Work</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Here is small JavaScript program implemented into WebSite. This program only demonstrates small part of my abilities.
+        </p>
+        <a href="mywork.html" class="self-end">
+            <button class="bg-[#979797] text-white py-2 px-4 rounded hover:bg-[#393636] shadow-md mt-4">
+                Review
+            </button>
+        </a>
+    </section>
+</main>
+
+<footer class="flex justify-between w-full items-center bg-[#979797] p-4 md:p-6 mt-auto text-center">
+    <div class="flex-1 text-center max-w-[45%] md:max-w-[70%]">
+        <section class="text-base">
+            <p>© Copyright 2024 Adrian Gould and Iegor Giba. All rights reserved.</p>
+        </section>
+    </div>
+
+    <nav class="w-[55%] md:w-[30%]">
+        <ul class="list-none grid grid-cols-3 gap-1 px-[10%] mb-2">
+            <li><a href="contact.html" class="hover:text-lg font-bold text-black">Contact</a></li>
+            <li><a href="resume.html" class="hover:font-bold text-black">Resume</a></li>
+            <li><a href="mywork.html" class="hover:font-bold text-black">Sample Work</a></li>
+            <li><a href="about.html" class="hover:font-bold text-black">About</a></li>
+            <li><a href="projects.html" class="hover:font-bold text-black">Projects</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
