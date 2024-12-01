@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans m-0 p-0 w-full flex flex-col min-h-screen">
+
+<header class="flex flex-row justify-between items-center sticky top-0 left-0 bg-[#979797] text-white p-[10px] z-10">
+    <h1 class="text-3xl font-bold">My Portfolio</h1>
+
+    <nav class="relative">
+        <input type="checkbox" id="nav-check" class="peer hidden">
+        <label for="nav-check" class="flex flex-col justify-around w-8 h-8 cursor-pointer md:hidden">
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+        </label>
+        <ul class="hidden absolute top-[60px] w-[91px] md:w-auto right-[3px] bg-[#979797] peer-checked:flex flex-col gap-4 p-4 md:relative md:flex md:flex-row md:gap-4 md:p-0 md:top-0">
+            <li><a href="index.html" class="block text-white hover:font-bold">Home</a></li>
+            <li><a href="contact.html" class="block text-white hover:font-bold">Contact</a></li>
+            <li><a href="resume.html" class="block text-white hover:font-bold">Resume</a></li>
+            <li><a href="projects.html" class="block text-white hover:font-bold">Projects</a></li>
+            <li><a href="mywork.html" class="block text-white hover:font-bold">Sample Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="flex-grow bg-[#e0e0e0] p-4 md:grid md:grid-cols-2 md:p-8 gap-5 md:mx-[15%] md:my-[0.1%] space-y-5 md:space-y-0">
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">About Me</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Hi, I am Iegor, a student who is learning programing. I have created this site to display my progress and share my projects.
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            I am studying programming in NM TAFE, and also I am finishing my 3rd year in National University "Zaporizhzhia Polytechnic".
+            My speciality is - Automation and Computer Integrated Science. I have learned some programming languages, and have this level of knowledge:
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            C/C++ , JavaScript, Pascal - Basic Level
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Java - Intermediate Level
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Python, C# - Advanced Level
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            I have also learned a lot of another skills in my free time. You can read about them in <a href="resume.html" class="hover:font-bold">My Resume</a>.
+        </p>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Credits</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Made by Iegor. A huge thank you to all my lectures for their support and guidance. This website wouldn’t have been possible without them.
+        </p>
+    </section>
+</main>
+
+<footer class="flex justify-between w-full items-center bg-[#979797] p-4 md:p-6 mt-auto text-center">
+    <div class="flex-1 text-center max-w-[45%] md:max-w-[70%]">
+        <section class="text-base">
+            <p>© Copyright 2024 Adrian Gould and Iegor Giba. All rights reserved.</p>
+        </section>
+    </div>
+
+    <nav class="w-[55%] md:w-[30%]">
+        <ul class="list-none grid grid-cols-3 gap-1 px-[10%] mb-2">
+            <li><a href="index.html" class="hover:text-lg font-bold text-black">Home</a></li>
+            <li><a href="resume.html" class="hover:font-bold text-black">Resume</a></li>
+            <li><a href="mywork.html" class="hover:font-bold text-black">Sample Work</a></li>
+            <li><a href="contact.html" class="hover:font-bold text-black">Contact</a></li>
+            <li><a href="projects.html" class="hover:font-bold text-black">Projects</a></li>
+        </ul>
+    </nav>
+</footer>
 
 </body>
 </html>
