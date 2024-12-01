@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/ninja-apia-app.js"></script>
 </head>
-<body>
+<body class="font-sans m-0 p-0 w-full flex flex-col min-h-screen">
+
+<header class="flex flex-row justify-between items-center sticky top-0 left-0 bg-[#979797] text-white p-[10px] z-10">
+    <h1 class="text-3xl font-bold">My Portfolio</h1>
+
+    <nav class="relative">
+        <input type="checkbox" id="nav-check" class="peer hidden">
+        <label for="nav-check" class="flex flex-col justify-around w-8 h-8 cursor-pointer md:hidden">
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+        </label>
+        <ul class="hidden absolute top-[60px] w-[91px] md:w-auto right-[3px] bg-[#979797] peer-checked:flex flex-col gap-4 p-4 md:relative md:flex md:flex-row md:gap-4 md:p-0 md:top-0">
+            <li><a href="index.html" class="block text-white hover:font-bold">Home</a></li>
+            <li><a href="contact.html" class="block text-white hover:font-bold">Contact</a></li>
+            <li><a href="about.html" class="block text-white hover:font-bold">About</a></li>
+            <li><a href="resume.html" class="block text-white hover:font-bold">Resume</a></li>
+            <li><a href="projects.html" class="block text-white hover:font-bold">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="flex-grow bg-[#e0e0e0] p-4 md:grid md:grid-cols-2 md:p-8 gap-5 md:mx-[15%] md:my-[0.1%] space-y-5 md:space-y-0">
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg md:col-span-2">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Ninja API App</h2>
+        <section class="pt-[5px] pb-[10px]">
+                <div class="ninja-api-app">
+                    <form id="api-form">
+                        <div class="flex flex-col items-center gap-[15px]">
+                            <p class="text-[20px] mb-[10px]">Pick from the following API's</p>
+                            <label class="text-[16px] flex items-center gap-[5px] mb-[5px]">
+                                <input type="checkbox" name="api-route" class="api-checkbox appearance-none w-[20px] h-[20px] bg-white border border-gray-300 rounded-md inline-block cursor-pointer relative mr-2 checked:bg-[#979797] checked:border-[#979797] checked:after:content-['\2713'] checked:after:pl-[3px] checked:after:pb-[5px]" value="recipe-finder"> Recipe Finder
+                            </label>
+                            <label class="text-[16px] flex items-center gap-[5px] mb-[5px]">
+                                <input type="checkbox" name="api-route" class="api-checkbox appearance-none w-[20px] h-[20px] bg-white border border-gray-300 rounded-md inline-block cursor-pointer relative mr-2 checked:bg-[#979797] checked:border-[#979797] checked:after:content-['\2713'] checked:after:pl-[3px] checked:after:pb-[5px]" value="password-generator"> Password Generator
+                            </label>
+                            <input class="outline-none text-center border border-[#D3D3D3] rounded-[6px] w-[80%]" type="text" id="api-input" name="api-input" placeholder="Select API first" aria-label="Enter your query" >
+                            <button class="border border-[#D3D3D3] bg-white rounded-[6px] hover:bg-[#979797]" type="button" id="Get-Response">Get Response</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div id="api-response" class="response-area">
+                    <p id="constant-message" class="hidden block text-center">Hope you like the results!</p>
+                    <p id="response-message" class="hidden block text-center">Response will appear here...</p>
+                </div>
+            </footer>
+    </section>
+</main>
+
+<footer class="flex justify-between w-full items-center bg-[#979797] p-4 md:p-6 mt-auto text-center">
+    <div class="flex-1 text-center max-w-[45%] md:max-w-[70%]">
+        <section class="text-base">
+            <p>© Copyright 2024 Adrian Gould and Iegor Giba. All rights reserved.</p>
+        </section>
+    </div>
+
+    <nav class="w-[55%] md:w-[30%]">
+        <ul class="list-none grid grid-cols-3 gap-1 px-[10%] mb-2">
+            <li><a href="index.html" class="hover:text-lg font-bold text-black">Home</a></li>
+            <li><a href="about.html" class="hover:font-bold text-black">About</a></li>
+            <li><a href="projects.html" class="hover:font-bold text-black">Projects</a></li>
+            <li><a href="contact.html" class="hover:font-bold text-black">Contact</a></li>
+            <li><a href="resume.html" class="hover:font-bold text-black">Resume</a></li>
+        </ul>
+    </nav>
+</footer>
 
 </body>
 </html>
