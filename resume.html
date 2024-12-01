@@ -2,9 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans m-0 p-0 w-full flex flex-col min-h-screen">
+
+<header class="flex flex-row justify-between items-center sticky top-0 left-0 bg-[#979797] text-white p-[10px] z-10">
+    <h1 class="text-3xl font-bold">My Portfolio</h1>
+
+    <nav class="relative">
+        <input type="checkbox" id="nav-check" class="peer hidden">
+        <label for="nav-check" class="flex flex-col justify-around w-8 h-8 cursor-pointer md:hidden">
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+            <span class="bg-white h-[3px] w-full my-1"></span>
+        </label>
+        <ul class="hidden absolute top-[60px] w-[91px] md:w-auto right-[3px] bg-[#979797] peer-checked:flex flex-col gap-4 p-4 md:relative md:flex md:flex-row md:gap-4 md:p-0 md:top-0">
+            <li><a href="index.html" class="block text-white hover:font-bold">Home</a></li>
+            <li><a href="contact.html" class="block text-white hover:font-bold">Contact</a></li>
+            <li><a href="about.html" class="block text-white hover:font-bold">About</a></li>
+            <li><a href="projects.html" class="block text-white hover:font-bold">Projects</a></li>
+            <li><a href="mywork.html" class="block text-white hover:font-bold">Sample Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="flex-grow bg-[#e0e0e0] p-4 md:grid md:grid-cols-2 md:p-8 gap-5 md:mx-[15%] md:my-[0.1%] space-y-5 md:space-y-0">
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Personal Information</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Name: Iegor Giba
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Location: Perth, WA, Australia
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            e-mail: yehor.hiba@gmail.com
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Linkedin: <a href="https://www.linkedin.com/in/yegor-george-giba/" class="hover:font-bold">www.linkedin.com</a>
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            GitHub: <a href="https://github.com/sh1zaaaaaaa" class="hover:font-bold">github.com</a>
+        </p>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Education</h2>
+        <h2 class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center font-bold">
+            NM TAFE - Certificate IV in Programming
+        </h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Year: Feb 2024 - Dec 2024 (Expected)
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Focus: Python, SQL, Web Development, and C#
+        </p>
+        <h2 class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center font-bold">
+            National University 'Zaporizhzhia Polytechnic'
+        </h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Year: Sep 2022 - Present
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Focus: Advanced Mathematics, Advanced Physics, C++, Python, SQL, 3D Modeling (Blender), 3D modeling (Fusion360)
+        </p>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Skills</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            WebDevelopment (HTML, CSS, JavaScript), Pascal, Linux, Office360, Fusion360 - Basic Level
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            C/C++, Java, Blender, Adobe Premier Pro, Sony Vegas Pro, Windows/macOS Operating Systems, Adobe Illustrator - Intermediate Level
+        </p>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            C#, Python, Adobe Photoshop, PC Assembling - Advanced Level
+        </p>
+    </section>
+    <section class="border border-[#D3D3D3] rounded-lg p-4 bg-[#D3D3D3] shadow-lg">
+        <h2 class="text-2xl font-bold text-[#393636] text-center">Created Projects</h2>
+        <h2 class="text-2xl font-bold text-[#393636] text-center mt-4">Portfolio WebSite</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            This WebSite demonstrates my skills and projects. Developed with HTML, JavaScript and Tailwind (CSS framework).
+            This site has a responsive design and user-friendly interface for easy navigation.
+        </p>
+        <h2 class="text-2xl font-bold text-[#393636] mt-4 text-center">Car-Care Mobile APP</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            Application that is developing from scratch by using C# and .NET MAUI framework.
+            This program was developed to simplify tracking maintenance intervals and browsing parts for your cars.
+        </p>
+        <h2 class="text-2xl font-bold text-[#393636] mt-4 text-center">Crypto-Liquidation Tracking Bot</h2>
+        <p class="mt-4 leading-relaxed max-w-[90%] mx-auto text-[#393636] text-center">
+            A Telegram Bot that is tracking traders liquidations in real time to simplify analyses for the traders.
+            The Bot was developed in Python by using Aiogram framework, and WebSocket Client library.
+        </p>
+    </section>
+</main>
+
+<footer class="flex justify-between w-full items-center bg-[#979797] p-4 md:p-6 mt-auto text-center">
+    <div class="flex-1 text-center max-w-[45%] md:max-w-[70%]">
+        <section class="text-base">
+            <p>© Copyright 2024 Adrian Gould and Iegor Giba. All rights reserved.</p>
+        </section>
+    </div>
+
+    <nav class="w-[55%] md:w-[30%]">
+        <ul class="list-none grid grid-cols-3 gap-1 px-[10%] mb-2">
+            <li><a href="index.html" class="hover:text-lg font-bold text-black">Home</a></li>
+            <li><a href="about.html" class="hover:font-bold text-black">About</a></li>
+            <li><a href="mywork.html" class="hover:font-bold text-black">Sample Work</a></li>
+            <li><a href="contact.html" class="hover:font-bold text-black">Contact</a></li>
+            <li><a href="projects.html" class="hover:font-bold text-black">Projects</a></li>
+        </ul>
+    </nav>
+</footer>
 
 </body>
 </html>
